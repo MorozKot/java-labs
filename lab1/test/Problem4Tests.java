@@ -1,7 +1,7 @@
-package test;
+package lab1.test;
 
-import main.Problem4;
-import org.testng.annotations.Test;
+import lab1.main.Problem4;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
@@ -19,7 +19,7 @@ public class Problem4Tests {
     }
 
     @Test
-    void Test2() {
+    void Test2()  {
         int[][] noFlattenMatrix = {
                 {10, 11, 12},
                 {13, 14, 15},

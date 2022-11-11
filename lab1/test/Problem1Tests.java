@@ -1,11 +1,10 @@
-package test;
+package lab1.test;
 
-import main.Problem1;
-import org.testng.annotations.Test;
+import lab1.main.Problem1;
+import org.junit.jupiter.api.Test;
 
-import static org.testng.AssertJUnit.assertFalse;
-import static org.testng.AssertJUnit.assertTrue;
-
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class Problem1Tests {
 

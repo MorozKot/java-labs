@@ -1,7 +1,7 @@
-package test;
+package lab1.test;
 
-import main.Problem2;
-import org.testng.annotations.Test;
+import lab1.main.Problem2;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 

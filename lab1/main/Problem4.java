@@ -1,4 +1,4 @@
-package main;
+package lab1.main;
 
 public class Problem4 {
 
@@ -16,16 +16,21 @@ public class Problem4 {
      * Выход: [1, 4, 7, 2, 5, 8, 3, 6, 9]
      */
     public static int[] flattenMatrix(int[][] matrix) {
-        int length = matrix.length * matrix[0].length;
-        int[] flattenMatrix = new int[length];
-        int el = 0;
-        for (int i = 0; i < matrix[0].length; i++) {
-            for (int[] ints : matrix) {
-                flattenMatrix[el] = ints[i];
-                el++;
+        if (matrix.length <= 0) {
+            System.out.println("Add non null matrix");
+            return new int[0];
+        } else {
+            int length = matrix.length * matrix[0].length;
+            int[] flattenMatrix = new int[length];
+            int el = 0;
+            for (int i = 0; i < matrix[0].length; i++) {
+                for (int[] ints : matrix) {
+                    flattenMatrix[el] = ints[i];
+                    el++;
+                }
             }
+            return flattenMatrix;
         }
-        return flattenMatrix;
     }
 }
 
